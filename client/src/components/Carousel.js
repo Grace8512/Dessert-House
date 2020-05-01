@@ -17,7 +17,6 @@ function ControlledCarousel() {
         justifyContent: "center",
         display: "flex",
         marginTop:"25px"}}>
-    {/* activeIndex={1} */}
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item >
         <img style={{objectFit: "contain", width:"70vw",height:"80vh", padding:"10%"}}src="assets/images/main1.png"  />
@@ -25,9 +24,6 @@ function ControlledCarousel() {
         <Carousel.Item >
             <img style={{objectFit: "contain", height:"80vh"}} src="assets/images/main2.png" />
         </Carousel.Item>
-        {/* <Carousel.Item >
-            <img style={{objectFit: "contain", height: "80vh"}} src="assets/images/main2-2.png"/>
-        </Carousel.Item> */}
         <Carousel.Item >
             <img style={{objectFit: "contain", height: "80vh"}} src="assets/images/main3.jpg"/>
         </Carousel.Item>
