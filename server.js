@@ -96,14 +96,6 @@ app.post("/products", (req, res)=> {
   });
 });
 
-// app.put("/checked_order", (req, res)=> {
-//   console.log(req);
-//   Order.findOneAndUpdate({
-//     _id: req.body.orderId
-//   }, {isChecked: true}).then((data)=>{
-//     res.json(data);
-//   });
-// });
 app.put("/checked_orders", (req, res)=> {
   Order.updateMany({
     _id: {$in:req.body.orderIds},
