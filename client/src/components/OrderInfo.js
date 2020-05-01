@@ -6,7 +6,6 @@ import Axios from "axios";
 
 const OrderInfo = (props) => {
     const {t} = useTranslation();
-    //const [orderDone, setOrderDone] = React.useState(props.order[0].isChecked);
     //setOrderDone을 통해 업데이트를 할 수 있다. 초기값이 props.isChecked로 설정. 
     const [checked, setChecked] = React.useState([]);
     const { orders, customerName, onClickFinish, isMyOrder, onClickDelete } = props;
@@ -33,7 +32,6 @@ const OrderInfo = (props) => {
             <Card.Body>
                 <Card.Title>{customerName}</Card.Title>
                 <Card.Text>
-                {/* {{"Order ID"+props._id + "," + props.productId} */}
                 {orders.map(item => <div style={{color: item.isChecked && !isMyOrder ? 'red' : 'black' }}>
                     {t(item.productId+"_name") + ", " + item.quantity + " "}
                     {isMyOrder?(<Button variant="info" disabled={item.isChecked} onClick={()=>onClickDelete(item._id)}>Delete</Button>):null}
