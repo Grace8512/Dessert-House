@@ -23,7 +23,6 @@ const App = (props) => {
   const [userName, setUserName] = React.useState(localStorage.getItem('userName') || "");
   const [devName, setDevName] = React.useState(localStorage.getItem('devName') || "");
   const [language, setLanguage] = React.useState(localStorage.getItem('language') || "en");
-  //const history = useHistory();
   //localstorage = 어디서든 엑세스 할 수 있는 베리어블 중 하나 
 
   const moveTo = (page) => {
@@ -44,8 +43,6 @@ const App = (props) => {
 
   const onUserLogin = (profileData) => {
     console.log("onUserLogin");
-    // let history = useHistory();
-    //  history.push("/customer")
     setIsLoggedIn(true);
     localStorage.setItem('isLoggedIn', true);
     setUserName(profileData.name);
@@ -53,8 +50,6 @@ const App = (props) => {
   }
 
   const onDevLogin = (profileData) => {
-    // let history = useHistory();
-    // history.push("/customer")
     setIsLoggedIn(true);
     localStorage.setItem('isLoggedIn', true);
     setDevName(profileData.name);
