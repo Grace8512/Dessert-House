@@ -1,0 +1,47 @@
+.pages {
+  background-color: blanchedalmond;
+}
+
+.login {
+  margin-left: 20px;
+  display: inline-block;
+}
+
+a.navbar-brand {
+  text-decoration-style: initial;
+}
+
+@media screen and (max-width: 360px) {
+  
+  #root .card {
+    width: 100%!important;
+  }
+  .login {
+    margin-bottom: 10px;
+  }
+
+}
+
+@media screen and (min-width: 361px) and (max-width: 700px) {
+  #root .card{
+    width: 100%!important;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 990px) {
+  #root .card{
+    width: 100%!important;
+  }
+
+  .card-text{
+    max-height: 12rem;
+    overflow: scroll;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .card-text{
+    max-height: 12rem;
+    overflow: scroll;
+  }
+}
