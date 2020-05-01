@@ -9,7 +9,6 @@ import MyOrder from "./MyOrder";
 
 const Customer = (props) => {
     const [productList, setProductList] = React.useState([]);
-    const [showMyOrder, setShowMyOrder] = React.useState(false);
     const { t } = useTranslation();
     const getProducts = () => {
         Axios.get("/products").then((res)=>{
@@ -19,19 +18,11 @@ const Customer = (props) => {
             }
         }); 
     };
-    const onClickMyOrder = () =>{
-        if(showMyOrder === true){
-            setShowMyOrder(false);
-        }else{
-            setShowMyOrder(true);
-        }
-    }
+
     getProducts();
 
     return (
         <Container>
-            {/* <Button onClick={onClickMyOrder}>MyOrder</Button>
-            {showMyOrder?<MyOrder customerName={props.customerName} isLoggedIn={props.isLoggedIn}/>:null} */}
             <Row> 
                 <CardDeck>
                 {productList.map((item)=>{
