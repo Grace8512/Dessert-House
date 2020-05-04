@@ -74,10 +74,10 @@ const App = (props) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link onClick={()=>moveTo("/customer")}>Products</Nav.Link>
-            <Nav.Link href="/my_order">My Order</Nav.Link>
-            <Nav.Link onClick={()=>{window.open('mailto:eunjoo@gmail.com')}}>Contact</Nav.Link>
-            <NavDropdown title="Translation" id="basic-nav-dropdown">
+            <Nav.Link onClick={()=>moveTo("/customer")}>{t("product")}</Nav.Link>
+            <Nav.Link href="/my_order">{t("my_order")}</Nav.Link>
+            <Nav.Link onClick={()=>{window.open('mailto:eunjoo@gmail.com')}}>{t("contact")}</Nav.Link>
+            <NavDropdown title={t("translation")} id="basic-nav-dropdown">
               <NavDropdown.Item><Button variant="link" onClick={()=>{changeLng("en")}}>English</Button></NavDropdown.Item>
               <NavDropdown.Item><Button variant="link" onClick={()=>{changeLng("fr")}}>French</Button></NavDropdown.Item>
               <NavDropdown.Item><Button variant="link" onClick={()=>{changeLng("kr")}}>Korean</Button></NavDropdown.Item>
