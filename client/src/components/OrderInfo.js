@@ -25,7 +25,6 @@ const OrderInfo = (props) => {
     return (
         
         <Card
-            
             bg="light"
             style={{ width: '18rem'}}
         >
@@ -33,8 +32,8 @@ const OrderInfo = (props) => {
                 <Card.Title>{customerName}</Card.Title>
                 <Card.Text>
                 {orders.map(item => <div style={{color: item.isChecked && !isMyOrder ? 'red' : 'black' }}>
-                    {t(item.productId+"_name") + ", " + item.quantity + " "}
-                    {isMyOrder?(<Button variant="info" disabled={item.isChecked} onClick={()=>onClickDelete(item._id)}>Delete</Button>):null}
+                    {t(item.productId+"_name") + ", " + item.quantity}
+                    {isMyOrder?(<Button variant="info" size="lg" block disabled={item.isChecked} onClick={()=>onClickDelete(item._id)}>Delete</Button>):null}
                     {!item.isChecked && !isMyOrder ? <input type="checkbox" onChange={(event)=>onChangeCheck(event,item._id)}/>:null}
                     </div> )}
                 </Card.Text>
