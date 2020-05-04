@@ -22,7 +22,7 @@ Users can order through Google Login but if they don't login, they can only chec
 
 
 5. Patissier can log in to the Patissier page and view and complete the customer's order.
-![Patissier](client/public/assets/images/patissier.png)
+![Patissier](client/public/assets/images/Patissier.png)
 
 ### Technologies, Libraries, and NPM Packages Used
 
