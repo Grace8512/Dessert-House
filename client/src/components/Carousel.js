@@ -25,7 +25,7 @@ function ControlledCarousel() {
             <img style={{objectFit: "contain", height:"80vh"}} src="assets/images/main2.png" />
         </Carousel.Item>
         <Carousel.Item >
-            <img style={{objectFit: "contain", height: "80vh"}} src="assets/images/main3.jpg"/>
+            <img style={{objectFit: "contain", height: "80vh"}} src="assets/images/main3.png"/>
         </Carousel.Item>
       </Carousel>
       </div>
