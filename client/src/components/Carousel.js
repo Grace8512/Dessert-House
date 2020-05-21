@@ -19,7 +19,7 @@ import {useState} from 'react'
         marginTop:"25px"}}>
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item >
-        <img style={{objectFit: "contain", width:"70vw",height:"80vh", padding:"10%"}}src="assets/images/main1.png"  />
+        <img style={{objectFit: "contain", width:"70vw",height:"80vh", padding:"10%"}}src="assets/images/main1.png" />
         </Carousel.Item>
         <Carousel.Item >
             <img style={{objectFit: "contain", height:"80vh"}} src="assets/images/main2.png" />

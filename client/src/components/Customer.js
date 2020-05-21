@@ -1,11 +1,10 @@
 import React from "react";
 import Axios from "axios";
 import ProductInfo from "./ProductInfo";
-import {Container, Row, Col, Button} from "react-bootstrap";
+import {Container, Row, Col} from "react-bootstrap";
 import CardDeck from 'react-bootstrap/CardDeck';
 import { useTranslation } from 'react-i18next';
 import "../i18n";
-import MyOrder from "./MyOrder";
 
 const Customer = (props) => {
     const [productList, setProductList] = React.useState([]);

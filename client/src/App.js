@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
-  BrowserRouter as Router, Route, useHistory
-} from "react-router-dom";
+  BrowserRouter as Router, Route} from "react-router-dom";
 import i18n from "./i18n";
 import { useTranslation } from 'react-i18next';
 import "./App.css";
@@ -88,7 +87,7 @@ const App = (props) => {
         </Navbar.Collapse>
       </Navbar> 
 
-      <div>{userName}</div>
+      <div>{userName ? userName : devName}</div>
        {!isLoggedIn && 
         <Route path="/" render={
           (props) => (

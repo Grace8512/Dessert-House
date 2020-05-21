@@ -2,7 +2,6 @@ import React from "react";
 import {Card, Button} from "react-bootstrap";
 import Axios from "axios";
 import ListGroup from 'react-bootstrap/ListGroup'
-import i18n from "../i18n";
 import { useTranslation } from 'react-i18next';
 
 const ProductInfo = (props) => {

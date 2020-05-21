@@ -4,13 +4,13 @@ import OrderInfo from "./OrderInfo";
 const MyOrder = (props) => {
     
     const [orders, setOrders] = React.useState([]);
-    const getMyOrders = () => {
-       Axios.get("/orders")
-       .then((res)=>{
-           console.log(res.data);
-           setOrders(res.data.filter((item)=>(item.customerName === props.customerName)));
-       });
-   }
+//     const getMyOrders = () => {
+//        Axios.get("/orders")
+//        .then((res)=>{
+//            console.log(res.data);
+//            setOrders(res.data.filter((item)=>(item.customerName === props.customerName)));
+//        });
+//    }
 
    const getProducts = async() => {
     //async를 쓰면 순차적처리가 아니라 동시처리로 바뀌고 await을 쓰면 동시처리 하지말고 await사용한 줄은 기다리고 그 다음줄부터 사용
