@@ -29,7 +29,6 @@ const MyOrder = (props) => {
 
         Axios.get("/orders").then((res)=>{
             console.log('res.body orders', res.data);
-            const customers = {};
             
             res.data.forEach(item=>{
                 item.productName = products[item.productId];       
@@ -37,8 +36,8 @@ const MyOrder = (props) => {
             console.log('original orders', res.data)
             console.log('customer name', props.customerName);
             console.log('this customers orders are', res.data.filter((item)=>(item.customerName === props.customerName)))
-            // setOrders(res.data.filter((item)=>(item.customerName === props.customerName)));
-            setOrders(res.data);
+            setOrders(res.data.filter((item)=>(item.customerName === props.customerName)));
+            //setOrders(res.data);
 
         }); 
     }; 
